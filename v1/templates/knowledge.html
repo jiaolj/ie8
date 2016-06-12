@@ -1,0 +1,11 @@
+{%extends 'base.html'%}
+{%block css%}<link href="/css/knowledge.css" rel="stylesheet" />{%endblock%}
+{%block content%}
+<div class="knowledge">
+	<div class="search">
+		<div class="searchIpt"><input type="text" id="search-input" value="寨卡"></div>
+		<div class="searchBtn"><input type="button" id="search-btn" value="搜索"></div>
+	</div>
+</div>
+{%endblock%}
+{%block js%}<script src="/js/require.js" defer async="true" data-main="/js/knowledge"></script>{%endblock%}

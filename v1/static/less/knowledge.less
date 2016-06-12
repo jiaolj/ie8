@@ -1,0 +1,56 @@
+@import 'model.less';
+
+@blue:#3487D4;
+.knowledge {
+	.search {
+		.wr(700rem);.mg(6px auto);.h(30px);
+		.searchIpt {
+			.w(82%);.flt;.ofh;.h;.psr;.bd(lighten(@blue,20%));.brr(2rem);
+			input[type="text"] {
+				.w;.h;.lh(34px);.psa;.l;.tir(6rem);
+			}
+			img {
+				.dsn;
+			}
+			&.active {
+				input[type="text"] {
+					.tir(52rem);
+				}
+				img {
+					.h;.wr(50rem);.psr;.zi;.csr;.dsi;
+				}
+			}
+		}
+		.searchBtn {
+			.w(16%);.flt;.ofh;.h(31px);.mgl(0.5%);
+			input[type="button"] {
+				.h;.lh(30px);.brr(4rem);.bg(@blue);.c(#fff);.csr;
+				&:hover {
+					.bg(lighten(@blue,5%));
+				}
+			}
+		}
+		select {
+			.hr(36rem);
+		}
+		.filterBox {
+			.mgbr(6rem);
+			dl.filter {
+				dt {
+					.flt;.psr;.pd-r(4rem,10rem);
+					a {
+						.psa;.r;.t;
+					}
+				}
+			}
+		}
+		.menus {
+			span {
+				.pd-r(6rem,12rem);.mg-r(0,6rem);.csr;
+				&.active {
+					.bd(#999);.csr(defaut);
+				}
+			}
+		}
+	}
+}

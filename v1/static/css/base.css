@@ -1,0 +1,70 @@
+body {
+  font-size: 14px;
+}
+body input {
+  border: 1px solid #dddddd;
+}
+header {
+  background: #56585d;
+  background: -webkit-gradient(linear, 0 0, 0 70%, from(#56585d), to(#2f3034));
+  background: -moz-linear-gradient(#56585d, #2f3034 70%);
+  background: linear-gradient(#56585d, #2f3034 70%);
+  -pie-background: linear-gradient(#56585d, #2f3034 70%);
+  height: 46px;
+  line-height: 46px;
+}
+header a.logo {
+  float: left;
+  color: #ffffff;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+header nav.menu {
+  float: left;
+}
+header nav.menu a {
+  color: #999999;
+  margin-right: 18px;
+}
+header nav.menu a.active {
+  color: #ffffff;
+}
+header nav.user {
+  float: right;
+  margin-right: 18px;
+}
+header nav.user a {
+  color: #ffffff;
+  margin-left: 18px;
+}
+header:after {
+  clear: both;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  background: #000000;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+}
+footer p {
+  color: #ffffff;
+  text-align: center;
+}
+footer p a {
+  color: #888888;
+}
+section {
+  position: absolute;
+  top: 46px;
+  bottom: 40px;
+  width: 100%;
+}
+section img.bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}

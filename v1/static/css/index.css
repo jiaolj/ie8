@@ -1,0 +1,28 @@
+.index img.index {
+  position: absolute;
+}
+.index img.index.index-1 {
+  top: 1%;
+  left: 40%;
+  height: 17%;
+}
+.index img.index.index-2 {
+  top: 5%;
+  left: 2%;
+  width: 16%;
+}
+.index img.index.index-3 {
+  bottom: 8%;
+  right: 2%;
+  width: 16%;
+}
+.index img.index.index-4 {
+  bottom: 8%;
+  left: 2%;
+  height: 10%;
+}
+.index img.index.index-5 {
+  bottom: 8%;
+  left: 46%;
+  height: 10%;
+}

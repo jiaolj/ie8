@@ -1,0 +1,52 @@
+@import 'model.less';
+
+
+body {
+	.fs(14px);
+	input {
+		.bd(#ddd);
+	}
+}
+
+header {
+	.bg(#56585d);
+	.gradient(#56585d,#2f3034);.h(46px);.lh(46px);
+	a.logo{
+		.flt;.c(#fff);.mgl(20px);.mgr(40px);
+	}
+	nav.menu {
+		.flt;
+		a {
+			.c(#999);.mgr(18px);
+			&.active {
+				.c(#fff);
+			}
+		}
+	}
+	nav.user {
+		.frt;.mgr(18px);
+		a {
+			.c(#fff);.mgl(18px);
+		}
+	}
+	&:after {
+		.cb;
+	}
+}
+
+footer {
+	.psa;.b;.bg(#000);.h(40px);.lh(40px);.w;
+	p {
+		.c(#fff);.tct;
+		a {
+			.c(#888);
+		}
+	}
+}
+
+section {
+	.psa;.t(46px);.b(40px);.w;
+	img.bg{
+		.w;.h;.psa;.l;.zi(-1);
+	}
+}
