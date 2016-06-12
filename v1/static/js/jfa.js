@@ -23,6 +23,52 @@ define(function(){
 					}
 				})
 			},
+			page : (function(){
+				var _o = {},
+					_i = {},
+					_dom = '<a p="1">首页</a><a p="#pre">上一页</a>#pages<a p="#next">下一页</a><a p="#allp">尾页</a>'
+				;
+				return {
+					getList : function(){
+						var pages = '',plist = [];
+						if(_i.page>(_o.pgl+1)){
+							for(var i = (_i.page-_o.pgl);i<(_i.page+_o.pgr);i++){
+								plist.push(i);
+							}
+						}else{
+							for(var i = 1;i<(_o.pgl+_o.pgr+1);i++){
+								plist.push(i);
+							}
+						}
+						$.each(plist,function(k,j){
+							pages += '<a class="pg-num" p="'+j+'">'+j+'</a>';
+						})
+						_i.dom.html(function(){
+							var pre = _i.page - 1,
+								next = _i.page + 1;
+							if(pre<1) pre = 1;
+							if(next>_i.allp) next = _i.allp;
+							return '<div class="jui-page">'+_dom.replace('#pages',pages).replace('#allp',_i.allp).replace('#pre',pre).replace('#next',next)+'</div>';
+						}).find('a.pg-num[p="'+_i.page+'"]').addClass('active');
+						_i.dom.find('a').click(function(){
+							_i.page = parseInt($(this).attr('p'));
+							_o.getList();
+							_i.suc((_i.page-1)*_i.every,_i.every);
+						});
+					},
+					status : 0,
+					init : function(arg){
+						_o = this;
+						_i = arg;
+						_o.status = 1;
+						_o.pgl = _i.pgl || 3;
+						_o.pgr = _i.pgr || 4;
+						_i.page = 1;
+						_i.allp = parseInt((_i.count-1)/_i.every)+1;
+						_o.getList();
+					}
+				}
+			})(),
 			location : function(url,o,temp){
 				if(typeof(console)=='undefined'){
 					location.href = '?url='+url;

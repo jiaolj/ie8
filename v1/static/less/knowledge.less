@@ -3,11 +3,11 @@
 @blue:#3487D4;
 .knowledge {
 	.search {
-		.wr(700rem);.mg(6px auto);.h(30px);
+		.w(70%);.mg(6px auto);
 		.searchIpt {
-			.w(82%);.flt;.ofh;.h;.psr;.bd(lighten(@blue,20%));.brr(2rem);
+			.w(82%);.flt;.h(30px);.ofh;.psr;.bd(lighten(@blue,20%));.br(2px);
 			input[type="text"] {
-				.w;.h;.lh(34px);.psa;.l;.tir(6rem);
+				.w;.h;.lh(28px);.psa;.l;.ti(6px);
 			}
 			img {
 				.dsn;
@@ -52,5 +52,36 @@
 				}
 			}
 		}
+	}
+	.box {
+		.w(96%);.l(2%);.psa;.t(50px);.b(50px);
+		table {
+			.tbbd();.w;
+			tr {
+				th,td {
+					.lh(30px);
+					&:nth-child(1){.w(10%)}
+					&:nth-child(2){.w(30%)}
+					&:nth-child(3){.w(30%)}
+					&:nth-child(4){.w(15%)}
+					&:nth-child(5){.w(15%)}
+				}
+			}
+			thead {
+				.bg(lighten(@blue,5%));.c(#fff);
+			}
+		}
+		.boxs {
+			.psa;.t(30px);.b;.ofa;.w;
+		}
+	}
+	.detail {
+		.mg-r(20rem);.lhr(32rem);.bg(#fff);.pd-r(20rem);
+		a {
+			.c(@blue);
+		}
+	}
+	.pagelist {
+		.psa;.r(2%);.b(6px);
 	}
 }

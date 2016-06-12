@@ -1,24 +1,23 @@
 .knowledge .search {
-  width: 7rem;
+  width: 70%;
   margin: 6px auto;
-  height: 30px;
 }
 .knowledge .search .searchIpt {
   width: 82%;
   float: left;
+  height: 30px;
   overflow: hidden;
-  height: 100%;
   position: relative;
   border: 1px solid #88b9e6;
-  border-radius: 0.02rem;
+  border-radius: 2px;
 }
 .knowledge .search .searchIpt input[type="text"] {
   width: 100%;
   height: 100%;
-  line-height: 34px;
+  line-height: 28px;
   position: absolute;
   left: 0;
-  text-indent: 0.06rem;
+  text-indent: 6px;
 }
 .knowledge .search .searchIpt img {
   display: none;
@@ -76,4 +75,69 @@
 .knowledge .search .menus span.active {
   border: 1px solid #999999;
   cursor: defaut;
+}
+.knowledge .box {
+  width: 96%;
+  left: 2%;
+  position: absolute;
+  top: 50px;
+  bottom: 50px;
+}
+.knowledge .box table {
+  border-left: 1px solid #cccccc;
+  width: 100%;
+}
+.knowledge .box table td,
+.knowledge .box table th {
+  border: solid #cccccc;
+  border-width: 1px 1px 1px 0;
+}
+.knowledge .box table tr th,
+.knowledge .box table tr td {
+  line-height: 30px;
+}
+.knowledge .box table tr th:nth-child(1),
+.knowledge .box table tr td:nth-child(1) {
+  width: 10%;
+}
+.knowledge .box table tr th:nth-child(2),
+.knowledge .box table tr td:nth-child(2) {
+  width: 30%;
+}
+.knowledge .box table tr th:nth-child(3),
+.knowledge .box table tr td:nth-child(3) {
+  width: 30%;
+}
+.knowledge .box table tr th:nth-child(4),
+.knowledge .box table tr td:nth-child(4) {
+  width: 15%;
+}
+.knowledge .box table tr th:nth-child(5),
+.knowledge .box table tr td:nth-child(5) {
+  width: 15%;
+}
+.knowledge .box table thead {
+  background: #4993d8;
+  color: #ffffff;
+}
+.knowledge .box .boxs {
+  position: absolute;
+  top: 30px;
+  bottom: 0;
+  overflow: auto;
+  width: 100%;
+}
+.knowledge .detail {
+  margin: 0.2rem;
+  line-height: 0.32rem;
+  background: #ffffff;
+  padding: 0.2rem;
+}
+.knowledge .detail a {
+  color: #3487d4;
+}
+.knowledge .pagelist {
+  position: absolute;
+  right: 2%;
+  bottom: 6px;
 }

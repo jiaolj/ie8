@@ -10,6 +10,8 @@ INSTALLED_APPS = (
     #'django.contrib.messages',
     'django.contrib.staticfiles',
     'corsheaders',
+    'models',
+    'tools',
 )
 MIDDLEWARE_CLASSES = (
     #'django.contrib.sessions.middleware.SessionMiddleware',
@@ -33,18 +35,26 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, 'templates').replace('\\', '/'),
 )
-ip = '114.215.192.135'
+ip = '192.168.1.253'
 mysql_uname = 'liangzhi'
-mysql_passwd = 'liangzhi'
+mysql_passwd = '123456'
 DATABASES = {
    'default': {
          'ENGINE': 'django.db.backends.mysql',
-         'NAME': 'CrawlerDB',
+         'NAME': '973',
          'USER': mysql_uname,
          'PASSWORD': mysql_passwd,
          'HOST': ip,
          'charset': 'utf8',
    },
+   'knowledge_processing': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'knowledge_processing',
+         'USER': mysql_uname,
+         'PASSWORD': mysql_passwd,
+         'HOST': ip,
+        'charset': 'utf8',
+    }
 }
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'Asia/Shanghai'

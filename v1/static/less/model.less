@@ -41,6 +41,13 @@
     background: linear-gradient(@a, @b 70%);
     -pie-background: linear-gradient(@a, @b 70%);
 }
+.tbbd(@c:#ccc){ //表格边框
+	.bdl(@c);
+	td,th {
+		border:solid @c;
+		border-width: 1px 1px 1px 0;
+	}
+}
 .bgimg(@f:top,@r:0,@g:0,@b:0,@s:0.5,@t:0.1){ //渐变背景
 	background-image: linear-gradient(to @f, rgba(@r,@g,@b,@s), rgba(@r,@g,@b,@s+@t), rgba(@r,@g,@b,@s+@t*2), rgba(@r,@g,@b,@s+@t*3));
 }
